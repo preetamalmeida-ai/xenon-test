@@ -62,6 +62,20 @@
       "source": "TC003",
       "firstSeen": "2026-01-21",
       "lastUsed": "2026-01-21"
+    },
+    "headingRole": {
+      "type": "role",
+      "value": "heading",
+      "source": "TC002",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
+    },
+    "buttonRole": {
+      "type": "role",
+      "value": "button",
+      "source": "TC002",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
     }
   }
 }
