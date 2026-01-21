@@ -2,32 +2,49 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Salesforce Lead Creation - Leads List Page', () => {
   test('Create Lead from Recently Viewed list', async ({ page }) => {
+    // Increase timeout for Salesforce Lightning
     test.setTimeout(120000);
 
+    // --------------------------------------------------
+    // Navigate directly to Leads list (already logged in)
+    // --------------------------------------------------
     await page.goto(
       'https://business-momentum-3532.lightning.force.com/lightning/o/Lead/list?filterName=Recent'
     );
 
-    // Ensure Leads page loaded
+    // Ensure Leads page is loaded
     await page.waitForSelector('h1:has-text("Leads")', { timeout: 60000 });
 
-    // Click Add a Lead (empty state CTA)
+    // --------------------------------------------------
+    // Click "Add a Lead" (empty-state CTA)
+    // --------------------------------------------------
     const addLeadBtn = page.locator('button:has-text("Add a Lead")');
     await addLeadBtn.waitFor({ state: 'visible', timeout: 60000 });
     await addLeadBtn.click();
 
-    // ✅ WAIT FOR MODAL CONTENT (NOT records-modal)
-    await page.waitForSelector('input[name="LastName"]', { timeout: 60000 });
+    // --------------------------------------------------
+    // Wait for New Lead modal (wait for real fields)
+    // --------------------------------------------------
+    await page.waitForSelector('input[name="lastName"]', { timeout: 60000 });
 
-    // Fill required fields
-    await page.fill('input[name="LastName"]', 'Playwright Lead');
+    // --------------------------------------------------
+    // Fill required fields (case-sensitive!)
+    // --------------------------------------------------
+    await page.fill('input[name="lastName"]', 'Playwright');
     await page.fill('input[name="Company"]', 'Automation Corp');
 
-    // Save
-    await page.click('button[name="SaveEdit"]');
+    // --------------------------------------------------
+    // Save Lead
+    // --------------------------------------------------
+    const saveBtn = page.locator('button[name="SaveEdit"]');
+    await saveBtn.waitFor({ state: 'visible', timeout: 60000 });
+    await saveBtn.click();
 
-    // Validate success
+    // --------------------------------------------------
+    // Verify success toast
+    // --------------------------------------------------
     const toast = page.locator('span.toastMessage');
+    await expect(toast).toBeVisible({ timeout: 60000 });
     await expect(toast).toContainText('was created');
   });
 });
