@@ -76,6 +76,20 @@
       "source": "TC002",
       "firstSeen": "2026-01-21",
       "lastUsed": "2026-01-21"
+    },
+    "elem_eukw6x": {
+      "type": "css",
+      "value": "#username",
+      "source": "TC002",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
+    },
+    "elem_4gy1i5": {
+      "type": "css",
+      "value": "#non_existing_element",
+      "source": "TC002",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
     }
   }
 }
