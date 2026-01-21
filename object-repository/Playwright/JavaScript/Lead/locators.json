@@ -34,6 +34,20 @@
       "source": "TC001",
       "firstSeen": "2026-01-21",
       "lastUsed": "2026-01-21"
+    },
+    "elem_ok405l": {
+      "type": "css",
+      "value": "h1:has-text(",
+      "source": "TC003",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
+    },
+    "elem_v8fjaa": {
+      "type": "css",
+      "value": "records-modal",
+      "source": "TC003",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
     }
   }
 }
