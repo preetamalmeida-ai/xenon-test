@@ -48,6 +48,13 @@
       "source": "TC003",
       "firstSeen": "2026-01-21",
       "lastUsed": "2026-01-21"
+    },
+    "elem_je63ih": {
+      "type": "css",
+      "value": "button[name=",
+      "source": "TC003",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
     }
   }
 }
