@@ -55,6 +55,13 @@
       "source": "TC003",
       "firstSeen": "2026-01-21",
       "lastUsed": "2026-01-21"
+    },
+    "elem_1deqsf": {
+      "type": "css",
+      "value": "input[name=",
+      "source": "TC003",
+      "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-21"
     }
   }
 }
