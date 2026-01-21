@@ -11,11 +11,12 @@ test.describe('Salesforce Lead Creation - Leads List Page', () => {
     // Ensure Leads page loaded
     await page.waitForSelector('h1:has-text("Leads")', { timeout: 60000 });
 
-    // ✅ Correct Lightning locator
-    await page.waitForSelector('button[name="New"]', { timeout: 60000 });
-    await page.locator('button[name="New"]').click();
+    // ✅ Use EMPTY-STATE CTA (Add a Lead)
+    const addLeadBtn = page.locator('button:has-text("Add a Lead")');
+    await addLeadBtn.waitFor({ state: 'visible', timeout: 60000 });
+    await addLeadBtn.click();
 
-    // Wait for modal
+    // Wait for New Lead modal
     await page.waitForSelector('records-modal', { timeout: 60000 });
 
     // Required fields
