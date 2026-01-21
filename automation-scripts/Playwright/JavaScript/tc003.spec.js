@@ -11,15 +11,15 @@ test.describe('Salesforce Lead Creation - Leads List Page', () => {
     // Ensure Leads page loaded
     await page.waitForSelector('h1:has-text("Leads")', { timeout: 60000 });
 
-    // ✅ Use EMPTY-STATE CTA (Add a Lead)
+    // Click Add a Lead (empty state CTA)
     const addLeadBtn = page.locator('button:has-text("Add a Lead")');
     await addLeadBtn.waitFor({ state: 'visible', timeout: 60000 });
     await addLeadBtn.click();
 
-    // Wait for New Lead modal
-    await page.waitForSelector('records-modal', { timeout: 60000 });
+    // ✅ WAIT FOR MODAL CONTENT (NOT records-modal)
+    await page.waitForSelector('input[name="LastName"]', { timeout: 60000 });
 
-    // Required fields
+    // Fill required fields
     await page.fill('input[name="LastName"]', 'Playwright Lead');
     await page.fill('input[name="Company"]', 'Automation Corp');
 
