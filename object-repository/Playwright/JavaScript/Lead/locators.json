@@ -181,6 +181,13 @@
       "source": "TC004",
       "firstSeen": "2026-01-22",
       "lastUsed": "2026-01-22"
+    },
+    "elem_h14arz": {
+      "type": "css",
+      "value": "#yourpassword",
+      "source": "TC004",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
     }
   }
 }
