@@ -1,15 +1,14 @@
 const { test, expect } = require('@playwright/test');
 
-test('Open Salesforce login page', async ({ page }) => {
-  // Go to Salesforce login page
+test('Salesforce login page – with failure step', async ({ page }) => {
+  // Open Salesforce login page
   await page.goto('https://login.salesforce.com');
 
-  // Verify page title
+  // This will PASS
   await expect(page).toHaveTitle(/Salesforce/i);
 
-  // Verify username field is visible
+  // This will PASS
   await expect(page.locator('#username')).toBeVisible();
 
-  // Verify password field is visible
-  await expect(page.locator('#password')).toBeVisible();
+  await expect(page.locator('#yourpassword')).toBeVisible();
 });
