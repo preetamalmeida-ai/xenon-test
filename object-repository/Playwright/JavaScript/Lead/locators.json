@@ -54,7 +54,7 @@
       "value": "button[name=",
       "source": "TC003",
       "firstSeen": "2026-01-21",
-      "lastUsed": "2026-01-21"
+      "lastUsed": "2026-01-22"
     },
     "elem_1deqsf": {
       "type": "css",
@@ -89,6 +89,90 @@
       "value": "#non_existing_element",
       "source": "TC002",
       "firstSeen": "2026-01-21",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_sedrjk": {
+      "type": "css",
+      "value": "input#Login",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_kadn3d": {
+      "type": "css",
+      "value": "button.branding-userProfile-button",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_vfse3z": {
+      "type": "css",
+      "value": "input#username",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_f2k9u4": {
+      "type": "css",
+      "value": "input#password",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_g4iev4": {
+      "type": "css",
+      "value": ".slds-global-header",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_d8rrvw": {
+      "type": "css",
+      "value": ".slds-page-header",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_jvxay9": {
+      "type": "css",
+      "value": "div[title=",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_7u0q17": {
+      "type": "css",
+      "value": "lightning-input[field-name=",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_2oeav6": {
+      "type": "css",
+      "value": "lightning-base-combobox-item[data-value=",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_hdf9wi": {
+      "type": "css",
+      "value": "records-record-layout-event-broker",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_r8l8i6": {
+      "type": "css",
+      "value": "div.forceToastMessage",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
+      "lastUsed": "2026-01-22"
+    },
+    "elem_8arkbs": {
+      "type": "css",
+      "value": "a[href*=",
+      "source": "TC000",
+      "firstSeen": "2026-01-22",
       "lastUsed": "2026-01-22"
     }
   }
